@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #fe4918;
+    --primaryDark-color: #e33000;
+    --body-font: 'Open Sans', sans-serif;
+    --primary-font: 'PT Sans', sans-serif;
+    --second-font: 'Oswald', sans-serif;
+}
+
+.nav-treeview > li {
+    margin-left: 20px;
+}
+
+.login-page .main-footer {
+    display: none;
+}
+
+.icono {
+    font-size: 24px;
+}
+
+ul {
+    padding: 0 0 0 20px;
+}
+
+/* ====================== Crear Registrado =============== */
+.paquetes h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.lista-precios {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .lista-precios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
+        margin: 0 auto;
+    }
+}
+.tabla-precio {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 1rem 0 0 0;
+    margin-bottom: 2rem;
+}
+.tabla-precio .btn {
+    width: 95%;
+}
+@media (min-width: 768px) {
+    .tabla-precio .btn {
+        width: auto;
+    }
+}
+.precios .tabla-precio:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+.tabla-precio ul {
+    list-style: none;
+    padding: 0;
+}
+.tabla-precio ul li {
+    font-family: var(--second-font);
+}
+.tabla-precio h3 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.tabla-precio .numero {
+    color: black;
+    font-weight: 400;
+}
+.caja {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.campo input {
+    width: 100%;
+}
+
+.campo {
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .campo {
+        flex-basis: 33.3%;
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+    }
+}
+.paquetes .tabla-precio input {
+    width: 80%;
+    margin: 1rem auto 1rem auto;
+    display: block;
+}
+
+.contenido-dia {
+    padding: 2rem;
+}
+.contenido-dia h4 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 18px;
+}
+
+.dias > div {
+    margin-bottom: 2rem;
+    flex-basis: calc(33.3% - 1rem);
+}
+.dias > div:last-of-type {
+    margin: 0;
+}
+.dias > div p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.dias > div label {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+.dias > div input {
+    margin-right: 1rem;
+}
+.dias time {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.dias .autor {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.resumen p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.extras {
+    flex-basis: 50%;
+}
+
+.orden label {
+    display: block;
+}
+.orden input,
+.orden select {
+    margin-bottom: 1.2rem;
+}
+
+.total {
+    flex-basis: calc(35%);
+    margin-top: 5rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .total {
+        margin: 0;
+    }
+}
+
+.lista-productos {
+    background-color: #e1e1e1;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: none;
+}
+#suma-total {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.hide {
+    display: none;
+}
+/* Clases para flex */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .flex-resp {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.space-around {
+    justify-content: space-around;
+}
+.space-evenly {
+    justify-content: space-evenly;
+}
+.space-unset {
+    justify-content: unset;
+}
+.btn {
+    display: inline-block;
+    font-family: var(--second-font);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    flex: 0 0 100%;
+    width: 100%;
+    color: white;
+    margin: 0.7rem 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
+.btn:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+@media (min-width: 768px) {
+    .btn {
+        width: auto;
+    }
+}
+.btn-primario {
+    background-color: var(--primary-color);
+}
+.btn-primario:hover {
+    background-color: var(--primaryDark-color);
+    color: white;
+}
+/* =============================================== */
+
